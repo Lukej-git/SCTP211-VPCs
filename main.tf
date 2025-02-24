@@ -207,7 +207,7 @@ resource "aws_instance" "public_ec2-a" {
    file_content = "${var.local_prefix}-ec2"})
 
   tags = {
-    Name = "EC2-in-VPC-A"
+    Name = "${var.local_prefix}-EC2-in-VPC-A"
   }
 }
 
@@ -226,7 +226,7 @@ resource "aws_instance" "public_ec2-b" {
    file_content = "${var.local_prefix}-ec2"})
 
   tags = {
-    Name = "EC2-in-VPC-B"
+    Name = "${var.local_prefix}-EC2-in-VPC-B"
   }
 }
 
